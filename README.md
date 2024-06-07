@@ -578,6 +578,26 @@ nano /etc/bind/options.conf
 ```
 systemctl enable --now bind
 nano /etc/bind/local.conf
+
+zone "hq.work" {
+        type master;
+        file "hq.db";
+};
+
+zone "branch.work" {
+        type master;
+        file "branch.db";
+};
+
+zone "0.0.10.in-addr.arpa" {
+        type master;
+        file "0.db";
+};
+
+zone "2.0.10.in-addr.arpa" {
+        type master;
+        file "2.db";
+}; 
 ```
 ![image](https://github.com/NyashMan/DEMO2024/assets/1348639/754ad3e6-64da-4fa4-ad12-22e05b21a960)  
 ```
