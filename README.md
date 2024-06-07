@@ -448,12 +448,12 @@ mkdir /opt/backup/
 nano backup-script.sh
 
 #!/bin/bash
-echo "Запуск скрипта!"
+echo "Ok, LetsGo!!"
 backup_dir = "/etc"
 dest_dir = "/opt/backup/"
 mkdir -p $dest_dir
 tar -czf $dest_dir/$(hostname -s)-$(date + "%d.%m.%y").tgz $backup_dir
-echo "Готово!"
+echo "Finish him!"
 ```
 ![image](https://github.com/NyashMan/DEMO2024/assets/1348639/5cb84998-f6b5-4951-8d2c-095aa8e7e96d)  
 ```
@@ -1248,8 +1248,6 @@ systemctl enable zabbix_agentd.service
 <p align="center">
  <img src="https://github.com/NyashMan/DEMO2024/assets/1348639/f5a8b9fd-62f7-4809-8439-975c7616ac9a" />
 </p>  
-
-
 
 
 
